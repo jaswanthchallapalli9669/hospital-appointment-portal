@@ -1,0 +1,189 @@
+{
+  "doctors": [
+    {
+      "id": "1",
+      "name": "Dr. Ananya Reddy",
+      "specialization": "Cardiology",
+      "experience": 12,
+      "phone": "+91 98490 12345",
+      "email": "dr.ananya.reddy@medpulse.in",
+      "available": true
+    },
+    {
+      "id": "2",
+      "name": "Dr. Rahul Sharma",
+      "specialization": "Neurology",
+      "experience": 9,
+      "phone": "+91 98110 23456",
+      "email": "dr.rahul.sharma@medpulse.in",
+      "available": true
+    },
+    {
+      "id": "3",
+      "name": "Dr. Priya Nair",
+      "specialization": "Pediatrics",
+      "experience": 7,
+      "phone": "+91 98200 34567",
+      "email": "dr.priya.nair@medpulse.in",
+      "available": false
+    },
+    {
+      "id": "4",
+      "name": "Dr. Karthik Varma",
+      "specialization": "Orthopedics",
+      "experience": 15,
+      "phone": "+91 98765 43210",
+      "email": "dr.karthik.varma@medpulse.in",
+      "available": true
+    },
+    {
+      "id": "5",
+      "name": "Dr. Sneha Patel",
+      "specialization": "Dermatology",
+      "experience": 8,
+      "phone": "+91 97250 56789",
+      "email": "dr.sneha.patel@medpulse.in",
+      "available": true
+    }
+  ],
+  "patients": [
+    {
+      "id": "1",
+      "name": "Ravi Kumar",
+      "age": 45,
+      "gender": "Male",
+      "phone": "+91 98480 11223",
+      "email": "ravi.kumar@gmail.com"
+    },
+    {
+      "id": "2",
+      "name": "Lakshmi Devi",
+      "age": 34,
+      "gender": "Female",
+      "phone": "+91 99080 22334",
+      "email": "lakshmi.devi@outlook.com"
+    },
+    {
+      "id": "3",
+      "name": "Arjun Reddy",
+      "age": 28,
+      "gender": "Male",
+      "phone": "+91 94400 33445",
+      "email": "arjun.reddy@yahoo.co.in"
+    },
+    {
+      "id": "4",
+      "name": "Sravani Rao",
+      "age": 52,
+      "gender": "Female",
+      "phone": "+91 96180 44556",
+      "email": "sravani.rao@gmail.com"
+    },
+    {
+      "id": "5",
+      "name": "Naveen Kumar",
+      "age": 39,
+      "gender": "Male",
+      "phone": "+91 97030 55667",
+      "email": "naveen.k@hotmail.com"
+    },
+    {
+      "id": "6",
+      "name": "Pooja Sharma",
+      "age": 24,
+      "gender": "Female",
+      "phone": "+91 98660 66778",
+      "email": "pooja.sharma@gmail.com"
+    },
+    {
+      "id": "7",
+      "name": "Venkata Sai",
+      "age": 61,
+      "gender": "Male",
+      "phone": "+91 94900 77889",
+      "email": "venkat.sai@yahoo.com"
+    },
+    {
+      "id": "8",
+      "name": "Divya Nair",
+      "age": 31,
+      "gender": "Female",
+      "phone": "+91 99890 88990",
+      "email": "divya.nair@gmail.com"
+    }
+  ],
+  "appointments": [
+    {
+      "id": "1",
+      "patientId": "1",
+      "doctorId": "1",
+      "date": "2026-11-02",
+      "time": "09:30",
+      "reason": "Routine heart check-up",
+      "status": "Confirmed"
+    },
+    {
+      "id": "2",
+      "patientId": "3",
+      "doctorId": "2",
+      "date": "2026-11-03",
+      "time": "10:15",
+      "reason": "Follow-up for migraine",
+      "status": "Booked"
+    },
+    {
+      "id": "3",
+      "patientId": "2",
+      "doctorId": "3",
+      "date": "2026-10-27",
+      "time": "11:30",
+      "reason": "Child's fever and cough",
+      "status": "Cancelled"
+    },
+    {
+      "id": "4",
+      "patientId": "7",
+      "doctorId": "4",
+      "date": "2026-11-04",
+      "time": "14:00",
+      "reason": "Knee pain consultation",
+      "status": "Confirmed"
+    },
+    {
+      "id": "5",
+      "patientId": "6",
+      "doctorId": "5",
+      "date": "2026-11-05",
+      "time": "15:45",
+      "reason": "Skin allergy consultation",
+      "status": "Booked"
+    },
+    {
+      "id": "6",
+      "patientId": "4",
+      "doctorId": "1",
+      "date": "2026-10-28",
+      "time": "16:30",
+      "reason": "Diabetes follow-up",
+      "status": "Completed"
+    },
+    {
+      "id": "7",
+      "patientId": "5",
+      "doctorId": "2",
+      "date": "2026-11-06",
+      "time": "11:00",
+      "reason": "General health check-up",
+      "status": "Booked"
+    },
+    {
+      "id": "8",
+      "patientId": "8",
+      "doctorId": "1",
+      "date": "2026-10-29",
+      "time": "17:15",
+      "reason": "Blood pressure review",
+      "status": "Completed"
+    }
+  ]
+}

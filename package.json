@@ -1,0 +1,29 @@
+{
+  "name": "l-t",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "node ./node_modules/vite/bin/vite.js",
+    "build": "node ./node_modules/vite/bin/vite.js build",
+    "preview": "node ./node_modules/vite/bin/vite.js preview",
+    "server": "node ./node_modules/json-server/lib/cli/bin.js --watch db.json --port 3000",
+    "dev:all": "node ./node_modules/concurrently/dist/bin/index.js -k -n \"SERVER,CLIENT\" -c \"yellow.bold,cyan.bold\" \"npm run server\" \"npm run dev\"",
+    "start": "npm run dev:all"
+  },
+  "dependencies": {
+    "concurrently": "^10.0.6",
+    "json-server": "^0.17.4",
+    "lucide-react": "^1.65.0",
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1",
+    "react-router-dom": "^7.18.5"
+  },
+  "devDependencies": {
+    "@types/react": "^19.3.0",
+    "@types/react-dom": "^19.3.0",
+    "@vitejs/plugin-react": "^6.1.2",
+    "oxlint": "^1.89.0",
+    "vite": "^8.3.5"
+  }
+}
