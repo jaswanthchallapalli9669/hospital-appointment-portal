@@ -11,6 +11,8 @@ import {
 } from 'lucide-react';
 
 export default function Sidebar({ isOpen, onClose, serverOnline = true }) {
+  const isCloud = typeof window !== 'undefined' && window.location.hostname !== 'localhost' && window.location.hostname !== '127.0.0.1';
+
   const navItems = [
     { to: '/', label: 'Dashboard', icon: LayoutDashboard },
     { to: '/doctors', label: 'Doctors', icon: Stethoscope },
@@ -62,13 +64,13 @@ export default function Sidebar({ isOpen, onClose, serverOnline = true }) {
 
       <div className="sidebar-footer">
         <div className="system-status-card">
-          <div className={`status-dot ${serverOnline ? '' : 'offline'}`} />
+          <div className={`status-dot ${isCloud || serverOnline ? '' : 'offline'}`} />
           <div>
             <div className="status-text-title">
-              {serverOnline ? 'Backend Online' : 'Backend Offline'}
+              {isCloud ? 'System Online' : serverOnline ? 'Backend Online' : 'Backend Offline'}
             </div>
             <div className="status-text-sub">
-              {serverOnline ? 'JSON Server: Port 3000' : 'Check json-server'}
+              {isCloud ? 'Cloud Live Mode' : serverOnline ? 'JSON Server: Port 3000' : 'Check json-server'}
             </div>
           </div>
         </div>

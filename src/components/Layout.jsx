@@ -5,6 +5,7 @@ import Topbar from './Topbar';
 import { doctorApi } from '../services/api';
 
 export default function Layout() {
+  const isCloud = typeof window !== 'undefined' && window.location.hostname !== 'localhost' && window.location.hostname !== '127.0.0.1';
   const [sidebarOpen, setSidebarOpen] = useState(false);
   const [serverOnline, setServerOnline] = useState(true);
 
@@ -35,7 +36,7 @@ export default function Layout() {
       <div className="main-wrapper">
         <Topbar onToggleSidebar={() => setSidebarOpen((prev) => !prev)} />
         <main className="content-area">
-          {!serverOnline && (
+          {!isCloud && !serverOnline && (
             <div className="alert-banner warning">
               <div className="alert-content">
                 <strong>Backend Notice:</strong> JSON Server (port 3000) does not appear to be responding. Make sure to run <code>npm run server</code> or <code>npm start</code>.
